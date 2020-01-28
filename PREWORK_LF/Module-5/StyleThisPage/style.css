@@ -1,0 +1,11 @@
+#one {color:red;}
+#two {color: blue;}
+#three {color: green;}
+#four {font-size: large;}
+#five {font-size: x-small;}
+#six {text-align: center;}
+
+
+.styledFont {
+    font-family: sans-serif;
+}
