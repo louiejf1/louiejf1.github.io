@@ -1,0 +1,77 @@
+
+
+body {
+    background: url('../images/board-bright-design-fabric-235994.jpg') no-repeat center/cover;
+}
+
+.container {
+    width: 960px;
+    height: 100vh;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 300px;
+    height: 50px;
+    background-color: #4aaaa5;
+    padding-left: 50px;
+    float: left;
+}
+
+#logo h1 {
+    color: #ffffff;
+}
+ul {
+    width: 30%;
+    float: right;
+}
+
+li {
+    color: #4aaaa5;
+    list-style-type: none;
+    text-decoration: none;
+    float: left;
+}
+
+
+
+.nav-bar {
+    width: 100%;
+    border-bottom: #4aaaa5;
+    border-width: 5px;
+}
+
+.pic-box {
+    width: 25%;
+    clear: both;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 260px;
+    border: 10px;
+    border-color: 4aaaa5;
+    padding: 10px;
+    float: left;
+}
+
+.bio-block {
+    width: 90%;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #4aaaa5;
+    height: 50px; 
+}
+
