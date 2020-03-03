@@ -2,106 +2,84 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Ludwig Flores</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Generator</title>
+
+    <!-- Git location https://github.com/louiejf1/JavaScript-PasswordGenerator-HW.git -->
+    <!-- https://www.youtube.com/watch?v=duNmhKgtcsI&t=310s -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="mainBody">
+        <!-- main box -->
+        <div class="container contentBox">
+            <!-- Main Row -->
+            <div class="row mainRow">
+                <!-- Main Col -->
+                <div class="col-2"></div>
+                <div class="col-8 topCol">
 
-  <!-- Navigation -->
+                    <!-- Heading text -->
+                    <h3>PASSWORD GENERATOR</h3>
+                    <div class="resultcontainer">
+                        <span id="passWordLocation" class="result" id="result">Password</span>
+                    </div><br>
+                    <!-- PW Lenght-->
+                    <div class="col-8 passCol">
+                        <p>Password Length:</p>
+                    </div>
+                    <div class="col-4 includes2 numLenght">
+                        <input id="pwlength" type="number" class="length" min="4" max="50" value="8">
+                    </div>
+                    <!-- PW upper -->
+                    <div class="col-8 includes">
+                        <p>Include Uppercase:</p>
+                    </div>
+                    <div class="col-4 includes2">
+                        <input id="upperCase" type="checkbox" class="uppercase" checked>
+                    </div>
+                    <!-- PW Lower-->
+                    <div class="col-8 includes">
+                        <p>Include Lowercase:</p>
+                    </div>
+                    <div class="col-4 includes2">
+                        <input id="lowerCase" type="checkbox" class="lowercase" checked>
+                    </div>
+                    <!-- PW Nums -->
+                    <div class="col-8 includes">
+                        <p>Include Numbers:</p>
+                    </div>
+                    <div class="col-4 includes2">
+                        <input id="numbers" type="checkbox" class="IncludeNumbers" checked>
+                    </div>
+                    <!-- PW Symb -->
+                    <div class="col-8 includes">
+                        <p>Include Symbols:</p>
+                    </div>
+                    <div class="col-4 includes2">
+                        <input id="symbols" type="checkbox" class="IncludeSymbol" checked>
+                    </div>
+                    <!-- Generate PW -->
+                    <div class="col generateBtn">
+                        <button type="button" class="btn btn-sm btn-outline-info passGenBtn">Generate</button><br>
+                    </div>
 
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <a class="navbar-brand logo" href="index.html">LF</a>
-    
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link myNavLink" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link myNavLink" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link myNavLink" href="portfolio.html">Portfolio</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Jumbotron -->
-
-  <div class="jumbotron myJumbotron">
-
-    <div class="backgroundImage">
-
-      <div class="content myContent">
-
-
-        <div class="jumboText">
-          <h1 class="display-4">Ludwig Flores</h1>
-          <p class="lead">Full stack web developer.</p>
-          <hr class="my-4 jumboDivider">
-          <p>HTML | CSS | Bootstrap | JavaScript</p>
-          <a class="btn btn-primary btn-lg" href="portfolio.html" role="button">See More</a>
+                </div>
+                <div class="col-2"></div>
+            </div>
         </div>
-
-      </div>
-
     </div>
-
-  </div>
-
-  <!-- Message -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12 letsExplore">
-        <p class="bodyText"> Let's explore the possibilities of what we can accomplish with my new new coding skills! </p>
-      </div>
-    </div>
-  </div>
-  <!-- Footer -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="card text-center">
-          <div class="card-header">
-            Featured
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">Please contact me if have any question about how this site was created.</p>
-            <a href="contact.html" class="btn btn-primary">Contact Me</a>
-          </div>
-          <div class="card-footer text-muted">
-            
-          </div>
-        </div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="container footerBox">
-    <div class="row">
-      <div class="col-sm">
-        <p> Copyright Ludwig Flores 2020</p>
-      </div>
-    </div>
-  </div>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>

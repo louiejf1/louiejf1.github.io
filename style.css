@@ -1,0 +1,77 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainBody {
+  background: url("./resources/abstract-art-blur-circle-96381.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+}
+
+.contentBox {
+  color: #7eab6f;
+  font-family: "Raleway", sans-serif;
+}
+
+.mainRow {
+  /* border: solid 10px #ab8a6f; */
+  padding: 5px;
+}
+
+.topCol {
+  border: solid 1px #7eab6f;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #42424b;
+}
+
+.resultcontainer {
+  height: 40px;
+  padding: 3px;
+  border-radius: 5px;
+  border: solid 1px #7eab6f;
+}
+
+.passGenBtn {
+  height: auto;
+  width: auto;
+  text-align: center;
+  background-color: #7eab6f !important;
+  color: #ffffff;
+  float: right;
+}
+
+.numLenght {
+    width: 50px;
+}
+
+.includes, .passCol {
+  font-size: small;
+  text-align: c;
+  float: left;
+}
+
+.includes2 {
+  height: 50px;
+  /* width: 20px; */
+  font-size: small;
+  text-align: left;
+  float: left;
+}
+
+.generateBtn {
+  margin-bottom: 10px;
+  height: 40px;
+  float: right;
+  clear: both;
+}
